@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Noah Kruger - Meu Site</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <style>
+        /* Estilo para a barra lateral */
+        #sidebar {
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: rgb(83, 82, 82);
+            color: white;
+            padding: 20px;
+        }
+
+        #sidebar h1 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        #sidebar .nav-link {
+            color: white;
+            padding: 10px 0;
+            text-align: left;
+        }
+
+        #sidebar .footer {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+        }
+
+        #profile-picture {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Torna a foto arredondada */
+            object-fit: cover; /* Garante que a imagem se encaixe no espaço */
+            margin-bottom: 15px;
+        }
+
+        #content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        section {
+            margin-top: 90px;
+        }
+
+        .linkedin-icon {
+            display: block;
+            margin: 0 auto;
+            width: 30px;
+            height: 30px;
+        }
+
+        .confirmation-message {
+            display: none;
+            color: green;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra lateral fixa -->
+    <div id="sidebar">
+        <!-- Foto arredondada acima do nome -->
+        <img src="assets/eaa66ed2-e759-43b5-8e43-c009f1fde3ed.jpg" alt="Minha Foto" id="profile-picture">
+        <h1>Noah Kruger</h1>
+        <nav class="nav flex-column">
+            <a class="nav-link" href="#sobre-mim">Sobre Mim</a>
+            <a class="nav-link" href="#formacao">Formação Acadêmica</a>
+            <a class="nav-link" href="#projetos">Projetos</a>
+            <a class="nav-link" href="#contato">Contato</a>
+        </nav>
+        <!-- Footer na barra lateral -->
+        <div class="footer text-center">
+            <p class="mt-2">Redes Sociais:</p>
+            <a href="https://www.linkedin.com/in/noah-kruger-2a3810357/" target="_blank">
+                <img src="assets/linkedin.jpg" alt="LinkedIn" class="linkedin-icon">
+            </a>
+            <p class="mt-2">©️ Copyright Noah Kruger</p>
+        </div>
+    </div>
+
+    <div id="content">
+        <main>
+            <!-- Sobre Mim Section -->
+            <section id="sobre-mim" class="sobre-mim mt-4">
+                <h2 class="text-center">Sobre Mim</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center">
+                        <img src="assets/eaa66ed2-e759-43b5-8e43-c009f1fde3ed.jpg" alt="Foto de perfil" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Sou o Noah, tenho 17 anos e estudo no Senai Sul no curso de Desenvolvimento de Sistemas. Moro em Joinville SC.</p>
+                        <p><strong>Data Nascimento:</strong> 11/04/2007</p>
+                        <p><strong>Cidade:</strong> Joinville, Santa Catarina, BR</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Formação Acadêmica -->
+            <section id="formacao" class="mt-4 text-center">
+                <h2>Formação Acadêmica</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <p><strong>Curso:</strong> Desenvolvimento de Sistemas</p>
+                        <p><strong>Instituição:</strong> SENAI SUL - Joinville, SC</p>
+                        <p><strong>Conclusão:</strong> Em andamento</p>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Projetos Section -->
+            <section id="projetos" class="mt-4">
+                <h2 class="text-center">Projetos</h2>
+                <ul class="nav flex-column align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://github.com/NoahKruger11/exer_estoque25">Estoque</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/NoahKruger11/Noah_Finan-as">Banco De Dados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/NoahKruger11/NoahKrugerSQL">Atividade SQL</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="contato" class="mt-4">
+                <h2 class="text-center">Contato</h2>
+                <form class="text-center" id="contactForm">
+                    <div class="form-group mb-3">
+                        <label for="exampleInputEmail1">Endereço de email</label>
+                        <input type="email" class="form-control w-50 mx-auto" id="exampleInputEmail1" placeholder="Seu email" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="exampleInputPassword1">Senha</label>
+                        <input type="password" class="form-control w-50 mx-auto" id="exampleInputPassword1" placeholder="Senha" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="messageInput">Mensagem</label>
+                        <textarea class="form-control w-50 mx-auto" id="messageInput" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+            
+                    <!-- Mensagens de confirmação -->
+                    <div class="mt-3">
+                        <p id="successMessage" class="text-success d-none">Sua mensagem foi enviada com sucesso!</p>
+                        <p id="errorMessage" class="text-danger d-none">Ocorreu um erro ao enviar sua mensagem.</p>
+                    </div>
+                </form>
+            </section>
+            
+            
+</main>
+</div>
+</body>
+</html>
